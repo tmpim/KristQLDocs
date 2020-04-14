@@ -8,7 +8,7 @@ Of course, you can only run SELECT queries - you cannot modify the database.
 # Examples
 
 ## Get the last 100 transactions
-```GET https://kristql.lemmmy.pw/query?q=SELECT * FROM `transactions` ORDER BY `id` DESC LIMIT 100```
+```GET https://query.krist.ceriat.net/query?q=SELECT * FROM `transactions` ORDER BY `id` DESC LIMIT 100```
 ```json
 {
   "ok": true,
@@ -29,7 +29,7 @@ Of course, you can only run SELECT queries - you cannot modify the database.
 ```
 
 ## Get blocks with value larger than 50
-```GET https://kristql.lemmmy.pw/query?q=SELECT * FROM `blocks` WHERE `value` > 50```
+```GET https://query.krist.ceriat.net/query?q=SELECT * FROM `blocks` WHERE `value` > 50```
 ```json
 {
   "ok": true,
@@ -86,7 +86,7 @@ The `names` table contains all names that have been purchased. It has the follow
 * `unpaid` - The amount of blocks remaining until this name is fully paid.
 
 # The API
-The query API endpoint is `https://kristql.lemmmy.pw/query?q=SELECT`. You can use GET or POST, and supply the query as a query or body parameter.
+The query API endpoint is `https://query.krist.ceriat.net/query?q=SELECT`. You can use GET or POST, and supply the query as a query or body parameter.
 
 ## Formats
 There are three return formats supported: [JSON](https://en.wikipedia.org/wiki/JSON), compact JSON, and [CSV](https://en.wikipedia.org/wiki/Comma-separated_values).
